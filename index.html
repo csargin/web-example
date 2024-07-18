@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Plotly Viz0</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.3.2/core.js"></script>
-
-    <!-- Plotly JS library-->
-    <script src='https://cdn.plot.ly/plotly-latest.min.js' crossorigin="anonymous"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title: PyScript</title>
 </head>
 <body>
-    <script type="py" src="./viz1.py" config="./viz1.toml"></script>
-
-    <!-- Header and subheader -->
-    <h1 id="header"></h1>
-    <h2 id="subheader"></h2>
-
-    <!-- This is where the chart will be displayed -->
-    <div id="chart1"></div>
-
-    <!-- The description tag is here -->
-    <div id="description"></div>
+	<py-script> print("Hello, World!") </py-script>
+        <b><p>Today is <u><label id='today'></label></u></p></b>
+    <py-script>
+import datetime as dt
+pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+    </py-script>
 </body>
 </html>
+
