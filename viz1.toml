@@ -1,4 +1,0 @@
-packages = ["pandas","plotly"]
-
-[files]
-"world_df.csv" = "./world_df.csv"
